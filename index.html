@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Featured/ Món nổi bật</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .heading {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+  }
+
+  .heading h1 {
+    margin: 0;
+    flex-shrink: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 600;
+    font-size: clamp(20px, 3.2vw, 44px);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: #4E4E4E;
+    white-space: nowrap;
+  }
+
+  /* Mỗi đường kẻ có một dải gradient riêng, bo tròn hai đầu */
+  .line {
+    flex: 1 1 0;
+    height: 5px;
+    border-radius: 999px;
+    background: linear-gradient(
+      90deg,
+      #395BE7 7%,
+      #E55557 53%,
+      #E9AE4D 98%
+    );
+  }
+  .line:first-child { border-radius: 0 999px 999px 0; }
+  .line:last-child  { border-radius: 999px 0 0 999px; }
+</style>
+</head>
+<body>
+  <div class="heading">
+    <div class="line"></div>
+    <h1>Featured/ Món nổi bật</h1>
+    <div class="line"></div>
+  </div>
+</body>
+</html>
